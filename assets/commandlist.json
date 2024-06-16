@@ -228,7 +228,7 @@
   },
   {
     "type": "server",
-    "name": "/embed",
+    "name": "/embed(comingsoon)",
     "description": "埋め込みを簡単に作成し表示できます",
     "example": "/embed",
     "userPermission": [
