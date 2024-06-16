@@ -309,7 +309,7 @@
     "type": "music",
     "name": "/music_play",
     "description": "曲を流します",
-    "example": "/music_pray:(曲名orURL) 対応：YouTube , Soundcloud , Spotify",
+    "example": "/music_pray:(曲名orURL)",
     "userPermission": [
       "誰かがボイスチャンネルにいる必要がある"
     ],
@@ -403,6 +403,74 @@
     "note": "ページを更新するときに一部の権限が必要になります"
   },
   {
+    "type": "fun",
+    "name": "/hiroyuki",
+    "description": "ひろゆきを召喚、退出します",
+    "example": "/hiroyuki",
+    "userPermission": [
+      "チャンネルの管理"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "チャンネルの管理",
+      "メッセージの送信",
+      "ウェブフックの管理"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "server",
+    "name": "/invite(comingsoon)",
+    "description": "カスタマイズされた招待リンクを作成します",
+    "example": "/invite 100 1<br>/invite 500",
+    "userPermission": [
+      "招待リンクの作成"
+    ],
+    "botPermission": [
+      "招待リンクの作成"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "info",
+    "name": "/inviter(comingsoon)",
+    "description": "招待ランキングを表示します",
+    "example": "/inviter",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "info",
+    "name": "/invites(comingsoon)",
+    "description": "サーバー又はユーザーの招待一覧を表示します",
+    "example": "/invites<br>/invites @TakasumiBOT",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "tool",
+    "name": "/ip(comingsoon)",
+    "description": "IPアドレスの詳細情報を表示します",
+    "example": "/ip 8.8.8.8",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
     "type": "manage",
     "name": "/kick",
     "description": "指定されたメンバーをサーバーからKICKします",
@@ -429,6 +497,71 @@
     "note": "なし"
   },
   {
+    "type": "othor",
+    "name": "/log(comingsoon)",
+    "description": "チャットの履歴を出力します",
+    "example": "/log JSON 10",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "json、text形式が使用できます"
+  },
+  {
+    "type": "server",
+    "name": "/lottery(comingsoon)",
+    "description": "指定したロールを持っているメンバーから指定した人数を選びます",
+    "example": "/lottery 10 @Role",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "tool",
+    "name": "/math(comingsoon)",
+    "description": "式を計算します",
+    "example": "/math 4 * 25",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "fun",
+    "name": "/miq",
+    "description": "Make it a Quoteを生成します",
+    "example": "/miq これはテストです",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "manage",
+    "name": "/moderate(comingsoon)",
+    "description": "AutoModを使用したモデレート機能を設定します",
+    "example": "/moderate spam",
+    "userPermission": [
+      "サーバーの管理"
+    ],
+    "botPermission": [
+      "サーバーの管理"
+    ],
+    "note": "なし"
+  },
+  {
     "type": "music",
     "name": "/music_skip",
     "description": "再生中の曲をスキップします",
@@ -440,6 +573,73 @@
       "必要なし"
     ],
     "note": "キューに曲がないといけません<br>loopになっていると再生中の曲が初めからになります"
+  },
+  {
+    "type": "tool",
+    "name": "/nslookup(comingsoon)",
+    "description": "DNS情報を取得します",
+    "example": "/nslookup google.com",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "fun",
+    "name": "/number",
+    "description": "進数の変換をします",
+    "example": "/number 10進数 2進数 120",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "fun",
+    "name": "/omikuji",
+    "description": "おみくじを引きます",
+    "example": "/omikuji",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "search",
+    "name": "/package",
+    "description": "パッケージを検索して表示します",
+    "example": "/package NPM discord.js",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "manage",
+    "name": "/panel(comingsoon)",
+    "description": "役職パネルを作成します",
+    "example": "/panel title @Role1 @Role2",
+    "userPermission": [
+      "ロールの管理"
+    ],
+    "botPermission": [
+      "ロールの管理",
+      "チャンネルの閲覧",
+      "メッセージの送信"
+    ],
+    "note": "同じロールは選択できません<br>最大8個までロールを選択できます<br>ロールの付与にはレート制限があります"
   },
   {
     "type": "music",
@@ -521,7 +721,7 @@
   },
   {
     "type": "board",
-    "name": "/register(comingsoon)",
+    "name": "/register",
     "description": "サーバー掲示板に登録、削除を行います",
     "example": "/register",
     "userPermission": [
@@ -587,8 +787,34 @@
     "note": "なし"
   },
   {
+    "type": "tool",
+    "name": "/safeweb(comingsoon)",
+    "description": "Webサイトの安全性を評価します",
+    "example": "/safeweb https://google.com/",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "指定するURLは有効なものである必要があります"
+  },
+  {
+    "type": "tool",
+    "name": "/script(comingsoon)",
+    "description": "プログラムを実行します",
+    "example": "/script JavaScript",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
     "type": "info",
-    "name": "/server(coming soon)",
+    "name": "/server(comingsoon)",
     "description": "サーバーの情報を表示します",
     "example": "/server",
     "userPermission": [
@@ -600,8 +826,158 @@
     "note": "なし"
   },
   {
+    "type": "setting",
+    "name": "/setting bump(comingsoon)",
+    "description": "BUMPの時間に通知するロールを設定します",
+    "example": "/setting bump @通知",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "ディスボードがサーバーに参加している必要があります"
+  },
+  {
+    "type": "setting",
+    "name": "/setting delete(comingsoon)",
+    "description": "サーバーの設定情報を全て削除します",
+    "example": "/setting delete",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "メッセージの送信"
+    ],
+    "note": "この操作は元に戻せません"
+  },
+  {
+    "type": "setting",
+    "name": "/setting dissoku(comingsoon)",
+    "description": "Dissoku UPの時間に通知するロールを設定します",
+    "example": "/setting dissoku @通知",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "メッセージの送信"
+    ],
+    "note": "Dissokuがサーバーに参加している必要があります"
+  },
+  {
+    "type": "setting",
+    "name": "/setting ignore",
+    "description": "メッセージ展開、Bump通知、Dissoku通知、UP通知の無効・有効を切り替えます",
+    "example": "/setting ignore メッセージ展開 有効",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "有効にすると各機能の設定情報は削除されます"
+  },
+  {
+    "type": "setting",
+    "name": "/setting info",
+    "description": "データベースの設定状況を表示します",
+    "example": "/setting info",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "setting",
+    "name": "/setting join",
+    "description": "実行したチャンネルに参加メッセージの設定をします",
+    "example": "/setting join [User]ようこそ!",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "メッセージの送信",
+      "Webhookの管理"
+    ],
+    "note": "利用可能な変数<br>[User] ユーザーメンション<br>[UserName] ユーザーの名前<br>[UserDisplayName] ユーザーの表示名<br>[UserID] ユーザーID<br>[ServerName] サーバーの名前<br>[ServerID] サーバーID<br>[Count] メンバー数"
+  },
+  {
+    "type": "setting",
+    "name": "/setting leave",
+    "description": "実行したチャンネルに退出メッセージの設定をします",
+    "example": "/setting leave [User]さようなら",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "メッセージの送信",
+      "Webhookの管理"
+    ],
+    "note": "利用可能な変数は/setting joinと同じです"
+  },
+  {
+    "type": "setting",
+    "name": "/setting stats",
+    "description": "サーバーの統計情報の収集の有効・無効を切り替えます",
+    "example": "/setting stats",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "統計情報は/serverコマンドで確認できます"
+  },
+  {
+    "type": "setting",
+    "name": "/setting up",
+    "description": "TakasumiBOTのUPの時間に通知するロールを設定します",
+    "example": "/setting up @通知",
+    "userPermission": [
+      "管理者"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "メッセージの送信"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "tool",
+    "name": "/short",
+    "description": "短縮URLを作成します",
+    "example": "/short https://google.com/",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "指定するURLは有効なものである必要があります"
+  },
+  {
+    "type": "tool",
+    "name": "/skin",
+    "description": "マインクラフトのスキンを検索します",
+    "example": "/skin User",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "Java版専用です"
+  },
+  {
     "type": "manage",
-    "name": "/slowmode(coming soon)",
+    "name": "/slowmode",
     "description": "チャンネルに低速モードを設定します",
     "example": "/slowmode 100",
     "userPermission": [
@@ -613,9 +989,22 @@
     "note": "秒単位で低速を設定することができます"
   },
   {
+    "type": "othor",
+    "name": "/snowflake",
+    "description": "Snowflakeを解析します",
+    "example": "/snowflake 987698915820335124",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "有効なSnowflakeである必要があります"
+  },
+  {
     "type": "bot",
     "name": "/status",
-    "description": "BOTとホストサーバーの状態を表示します",
+    "description": "BOTの情報やサーバーの状態を表示します",
     "example": "/status",
     "userPermission": [
       "必要なし"
@@ -624,4 +1013,299 @@
       "必要なし"
     ],
     "note": "なし"
-  }]
+  },
+  {
+    "type": "manage",
+    "name": "/ticket",
+    "description": "簡易的なチケット機能を作成します",
+    "example": "/ticket チケット 説明",
+    "userPermission": [
+      "チャンネルの管理",
+      "メッセージの管理"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "チャンネルの管理",
+      "メッセージの送信"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "manage",
+    "name": "/timeout",
+    "description": "指定したメンバーをタイムアウトします",
+    "example": "/timeout @Arashi 1000 荒らし<br>/timeout @Arashi",
+    "userPermission": [
+      "メンバーをモデレート"
+    ],
+    "botPermission": [
+      "メンバーのモデレート"
+    ],
+    "note": "秒単位でタイムアウトすることができます<br>秒が指定されない場合デフォルト(30秒)になります"
+  },
+  {
+    "type": "server",
+    "name": "/top",
+    "description": "実行したチャンネルの1番最初のメッセージリンクを表示します",
+    "example": "/top",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "メッセージ履歴の閲覧"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "money",
+    "name": "/trade",
+    "description": "株の情報や取引をします",
+    "example": "/trade buy 3<br>/trade info",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "tool",
+    "name": "/translate",
+    "description": "テキストを翻訳します",
+    "example": "/translate hello 日本語<br>/translate こんにちは 英語",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "Google翻訳を使用して翻訳されています"
+  },
+  {
+    "type": "search",
+    "name": "/twitter",
+    "description": "ツイートを検索します",
+    "example": "/twitter Discord",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "検索ワードにid:ユーザー名を指定することで特定のユーザーのツイートを取得できます"
+  },
+  {
+    "type": "board",
+    "name": "/up",
+    "description": "サーバー掲示板の表示順位を上げます",
+    "example": "/up",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "招待リンクの作成"
+    ],
+    "note": "BOTの権限が不十分だと自動的に登録が解除される場合があります"
+  },
+  {
+    "type": "info",
+    "name": "/user",
+    "description": "指定されたユーザーを検索して表示します",
+    "example": "/user @TakasumiBOT<br>/user 981314695543783484",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "メンバー情報も取得できる場合は詳細情報まで表示します"
+  },
+  {
+    "type": "manage",
+    "name": "/warn",
+    "description": "指定されたユーザーを警告します",
+    "example": "/warn @Arashi",
+    "userPermission": [
+      "サーバーの管理"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "メンバーがDMを拒否している場合警告できません"
+  },
+  {
+    "type": "tool",
+    "name": "/webshot",
+    "description": "Webサイトのスクリーンショットを撮影します",
+    "example": "/webshot https://google.com/",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "指定するURLは有効なものである必要があります<br>一部のサイトはスクリーンショットが撮影できない場合があります"
+  },
+  {
+    "type": "search",
+    "name": "/whois",
+    "description": "Whois検索をします",
+    "example": "/whois google.com",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "search",
+    "name": "/wiki",
+    "description": "Wikipediaの検索をします",
+    "example": "/wiki Discord",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "money",
+    "name": "/work",
+    "description": "20分に1回お金を貰えます",
+    "example": "/work",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "500コインから1000コインのお金が貰えます"
+  },
+  {
+    "type": "search",
+    "name": "/yahoo",
+    "description": "Yahooで検索します",
+    "example": "/yahoo discord.js",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "tool",
+    "name": "/youtube",
+    "description": "Youtubeの動画の情報を取得します",
+    "example": "/youtube DCTBgUVCdhM",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "contextmenu",
+    "name": "アバターを表示",
+    "description": "ユーザーのアイコンを表示します",
+    "example": "アバターを表示をクリック",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "サーバーで違うアイコンを設定してる場合は両方表示されます"
+  },
+  {
+    "type": "contextmenu",
+    "name": "メンバー情報を表示",
+    "description": "メンバーの情報を表示します",
+    "example": "メンバー情報を表示をクリック",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "サーバーに存在しないメンバーは表示できません"
+  },
+  {
+    "type": "contextmenu",
+    "name": "Make it a Quote",
+    "description": "Make it a Quoteを生成します",
+    "example": "Make it a Quoteをクリック",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "contextmenu",
+    "name": "権限を表示",
+    "description": "メンバーの持っている権限を表示します",
+    "example": "権限を表示をクリック",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "contextmenu",
+    "name": "メッセージをピン留め",
+    "description": "メッセージを常に下に表示します",
+    "example": "メッセージをピン留めをクリック",
+    "userPermission": [
+      "チャンネルの管理",
+      "メッセージの管理"
+    ],
+    "botPermission": [
+      "チャンネルの閲覧",
+      "チャンネルの管理",
+      "メッセージの送信",
+      "メッセージの管理"
+    ],
+    "note": "最大6個まで作成できます<br>もう一度実行することでピン留めを削除できます"
+  },
+  {
+    "type": "contextmenu",
+    "name": "英語に翻訳",
+    "description": "メッセージを英語に翻訳します",
+    "example": "英語に翻訳をクリック",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  },
+  {
+    "type": "contextmenu",
+    "name": "日本語に翻訳",
+    "description": "メッセージを日本語に翻訳します",
+    "example": "日本語に翻訳をクリック",
+    "userPermission": [
+      "必要なし"
+    ],
+    "botPermission": [
+      "必要なし"
+    ],
+    "note": "なし"
+  }
+]
