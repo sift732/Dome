@@ -17,7 +17,7 @@
 
   const type = params.get("type");
   if(types[type]){
-    const commandlist = await fetch("/assets/commandlist.json")
+    const commandlist = await fetch("./assets/commandlist.json")
       .then(res=>res.json())
       .catch(error=>alert(error.message));
 
