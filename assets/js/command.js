@@ -10,7 +10,7 @@
     "bot": "Bot関連",
     "setting": "設定",
     "othor": "その他",
-  };
+  };,
 
   const params = new URLSearchParams(window.location.search);
 
