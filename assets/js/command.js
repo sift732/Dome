@@ -16,44 +16,35 @@
 
   const type = params.get("type");
   if(types[type]){
-    try {
-      const response = await fetch("./assets/commandlist.json");
-      
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+    const commandlist = await fetch("./assets/commandlist.json")
+      .then(res=>res.json())
+      .catch(error=>alert(error.message));
 
-      const commandlist = await response.json();
+    const list = commandlist.filter(c=>c.type === type);
 
-      const list = commandlist.filter(c => c.type === type);
+    document.getElementById("name").innerText = types[type];
 
-      document.getElementById("name").innerText = types[type];
+    const commands = document.querySelector(".commands");
 
-      const commands = document.querySelector(".commands");
+    commands.innerText = "";
 
-      commands.innerText = "";
-
-      commands.insertAdjacentHTML("afterbegin",
-        list.map(c => {
-          return `
-            <div class="col-sm-4 command">
-              <div class="card text-center h-100">
-                <div class="card-body">
-                  <h5 class="card-title"><strong>${c.name}</strong></h5>
-                  <p class="card-text">${c.description}</p>
-                  <p class="card-text"><strong>使用例</strong><br>${c.example}</p>
-                  <p class="card-text"><strong>ユーザー権限</strong><br>${c.userPermission.join("<br>")}</p>
-                  <p class="card-text"><strong>BOT権限</strong><br>${c.botPermission.join("<br>")}</p>
-                  ${c.note !== "なし" ? `<p class="card-text text-muted"><small>${c.note}</small></p>` : ""}
-                </div>
+    commands.insertAdjacentHTML("afterbegin",
+      list.map(c=>{
+        return `
+          <div class="col-sm-4 command">
+            <div class="card text-center h-100">
+              <div class="card-body">
+                <h5 class="card-title"><strong>${c.name}</strong></h5>
+                <p class="card-text">${c.description}</p>
+                <p class="card-text"><strong>使用例</strong><br>${c.example}</p>
+                <p class="card-text"><strong>ユーザー権限</strong><br>${c.userPermission.join("<br>")}</p>
+                <p class="card-text"><strong>BOT権限</strong><br>${c.botPermission.join("<br>")}</p>
+                ${c.note !== "なし" ? `<p class="card-text text-muted"><small>${c.note}</small></p>` : ""}
               </div>
             </div>
-          `;
-        }).join("")
-      );
-    } catch (error) {
-      console.error('Error fetching command list:', error);
-      alert(`Error: ${error.message}`);
-    }
+          </div>
+        `;
+      }).join("")
+    );
   }
 })();
