@@ -5,12 +5,11 @@
     "manage": "管理",
     "tool": "ツール",
     "search": "検索",
-    "music": "Music",
-    "board": "サーバー掲示板",
+    "music": "音楽",
+    "board": "近日公開",
     "bot": "Bot関連",
     "setting": "設定",
     "othor": "その他",
-    "contextmenu": "コンテキストメニュー"
   };
 
   const params = new URLSearchParams(window.location.search);
